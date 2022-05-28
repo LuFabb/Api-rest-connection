@@ -1,0 +1,14 @@
+{
+  "name": "api-rest-connection",
+  "version": "1.0.0",
+  "description": "This repo illustrates a standard method to connect to an api rest.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Fabbozzo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
