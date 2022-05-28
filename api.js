@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.status(200).send('Chanchito feliz') 
 })
 
+app.post('/', (req, res) => {
+  res.status(201).send('creando chanchito')
+})
+
 app.listen(port, () => {
   console.log('starting the application')
 })
