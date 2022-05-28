@@ -10,6 +10,10 @@ app.put('/:id', user.update)
 app.patch('/:id', user.update)
 app.delete('/id', user.destroy)
 
+app.get('*', (req, res) => {
+  res.status(404).send('this page does not exist')
+})
+
 app.listen(port, () => {
   console.log('starting the application')
 })
