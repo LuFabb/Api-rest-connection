@@ -1,7 +1,12 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const user = require('./user.controller')
 const app = express()
 const port = 3000
+
+app.use(express.json())
+//don't show the mongo db url for privacy reasons
+mongoose.connect('')
 
 app.get('/', user.list)
 app.post('/', user.create)
